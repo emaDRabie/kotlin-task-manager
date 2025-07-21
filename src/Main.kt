@@ -11,6 +11,11 @@ fun main() {
         if (it.isDone) println("✅ ${it.title}") // it: reference to each task
         else println("❌ ${it.title}")
     }
+    // adding filter to list of tasks for the second commit:
+    val completedTasks = listOfTasks.filter {
+        it.isDone
+    }
+    println(completedTasks)
 }
 
 // Task data class, each task has a title and status with default value
